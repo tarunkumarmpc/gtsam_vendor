@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>gtsam_vendor</name>
+  <version>4.2.0</version>
+  <description>ROS 2 vendor package for GTSAM, built completely from source.</description>
+  <maintainer email="tarun@todo.todo">Tarun</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>git</buildtool_depend>
+
+  <!-- System dependencies -->
+  <build_depend>libtbb-dev</build_depend>
+  <build_depend>eigen</build_depend>
+  <build_depend>boost</build_depend>
+  
+  <!-- Workspace dependencies -->
+  <build_depend>g2o_vendor</build_depend>
+
+  <exec_depend>libtbb-dev</exec_depend>
+  <exec_depend>eigen</exec_depend>
+  <exec_depend>boost</exec_depend>
+  <exec_depend>g2o_vendor</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
